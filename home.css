@@ -1,0 +1,94 @@
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 280px;
+    margin-top: 40px;
+}   
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 50px;
+}
+
+.otp-text p{
+    margin-top: -8px;
+    width: 93%;
+    color:#ccc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.otp-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -10px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+input {
+   /* padding: 0; */
+  /* border: none; */
+  outline: none;
+  padding-left: 15px;
+  box-sizing: border-box;
+
+}
+
+.input-box input{
+   display: flex;
+   height: 50px;
+   width: 100%;
+   border-radius: 25px;
+   border: 1px solid #ccc;
+   outline: none;
+   font-size: 17px;
+   /* padding-left: 20px; */
+}
+
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    background: white;
+    padding: 0 5px;
+    color: gray;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+    top: -8px;
+    font-size: 16px;
+    color: #ff7a3d;
+}
+
+
+button {
+    height: 55px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    background: #ff7a3d;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
