@@ -36,7 +36,7 @@
     margin-bottom: -10px;
 }
 
-.input-box {
+.input-box1 {
     position: relative;
     width: 100%;
 }
@@ -50,31 +50,33 @@ input {
 
 }
 
-.input-box input{
+.input-box1 input{
    display: flex;
-   height: 50px;
+   height: 55px;
    width: 100%;
    border-radius: 25px;
    border: 1px solid #ccc;
    outline: none;
    font-size: 17px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    /* padding-left: 20px; */
 }
 
-.input-box label {
+.input-box1 label {
     position: absolute;
     left: 15px;
     top: 14px;
     background: white;
     padding: 0 5px;
     color: gray;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: 0.3s;
     pointer-events: none;
 }
 
-.input-box input:focus + label,
-.input-box input:valid + label{
+.input-box1 input:focus + label,
+.input-box1 input:valid + label{
     top: -8px;
     font-size: 16px;
     color: #ff7a3d;
@@ -92,3 +94,83 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+
+  /* V-main Code Start */
+i
+
+.back {
+  padding: 20px;
+}
+
+.back a {
+  display: inline-block;
+}
+
+.v-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 100vh;
+  gap: 50px;
+}
+
+.input-box {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.input-box input {
+  height: 68px;
+  width: 68px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 22px;
+  outline: none;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+ 
+
+.input-box input:focus {
+    border: 2px solid #ff7a3d
+}
+
+.v-main i {
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+/* Success Html Start */
+
+
+.middle-main {
+  height: 100vh;
+  display: flex;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.otp-text2 {
+  text-align: center;
+  max-width: 80%;
+}
+
+body {
+  margin: 0;
+}
+
+
